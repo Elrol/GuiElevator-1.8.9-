@@ -1,0 +1,7 @@
+{
+    "parent": "guielevator:block/elevator",
+    "textures": {
+        "front": "guielevator:blocks/guielevator_black_face",
+        "side": "guielevator:blocks/guielevator_black"
+    }
+}

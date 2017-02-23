@@ -1,0 +1,16 @@
+[
+{
+  "modid": "guielevator",
+  "name": "Elrol's GUI Elevator",
+  "description": "A one block elevator mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Elrol_Arrowsend"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

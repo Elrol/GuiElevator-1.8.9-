@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 1/30/17 11:42 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.forgewareinc.elrol.guiElevator.TileEntityElevator.update(TileEntityElevator.java:209)
+	at com.forgewareinc.elrol.guiElevator.TileEntityElevator.<init>(TileEntityElevator.java:31)
+	at com.forgewareinc.elrol.guiElevator.Elevator.createNewTileEntity(Elevator.java:163)
+	at net.minecraft.block.Block.createTileEntity(Block.java:1565)
+	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:738)
+	at net.minecraft.world.World.setBlockState(World.java:369)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:187)
+	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:63)
+	at net.minecraft.item.ItemStack.onItemUse(ItemStack.java:149)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:438)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1569)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2123)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1080)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:380)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.forgewareinc.elrol.guiElevator.TileEntityElevator.update(TileEntityElevator.java:209)
+	at com.forgewareinc.elrol.guiElevator.TileEntityElevator.<init>(TileEntityElevator.java:31)
+	at com.forgewareinc.elrol.guiElevator.Elevator.createNewTileEntity(Elevator.java:163)
+	at net.minecraft.block.Block.createTileEntity(Block.java:1565)
+	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:738)
+	at net.minecraft.world.World.setBlockState(World.java:369)
+	at net.minecraft.item.ItemBlock.placeBlockAt(ItemBlock.java:187)
+	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:63)
+	at net.minecraft.item.ItemStack.onItemUse(ItemStack.java:149)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:438)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1569)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player31'/270, l='MpServer', x=-197.92, y=65.00, z=141.85]]
+	Chunk stats: MultiplayerChunkCache: 25, 25
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: -204.00,64.00,144.00 - World: (-204,64,144), Chunk: (at 4,4,0 in -13,9; contains blocks -208,0,144 to -193,255,159), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 7626 game time, 7626 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 25 total; [EntityZombie['Zombie'/133, l='MpServer', x=-199.50, y=45.00, z=132.72], EntityCow['Cow'/134, l='MpServer', x=-193.25, y=64.00, z=122.66], EntityRabbit['Rabbit'/135, l='MpServer', x=-197.28, y=60.00, z=142.50], EntitySpider['Spider'/136, l='MpServer', x=-206.31, y=46.00, z=135.75], EntityPlayerSP['Player31'/270, l='MpServer', x=-197.92, y=65.00, z=141.85], EntityCreeper['Creeper'/152, l='MpServer', x=-186.50, y=12.00, z=125.50], EntityZombie['Zombie'/153, l='MpServer', x=-180.91, y=49.00, z=120.66], EntityBat['Bat'/154, l='MpServer', x=-180.69, y=51.13, z=108.53], EntityCow['Cow'/163, l='MpServer', x=-161.22, y=67.00, z=126.13], EntitySkeleton['Skeleton'/164, l='MpServer', x=-165.91, y=19.00, z=133.47], EntityCreeper['Creeper'/165, l='MpServer', x=-168.97, y=31.00, z=137.34], EntityCow['Cow'/166, l='MpServer', x=-160.75, y=66.00, z=131.25], EntityRabbit['Rabbit'/107, l='MpServer', x=-231.59, y=63.00, z=102.84], EntityRabbit['Rabbit'/108, l='MpServer', x=-229.25, y=63.00, z=127.50], EntityRabbit['Rabbit'/109, l='MpServer', x=-227.72, y=63.00, z=117.50], EntityRabbit['Rabbit'/110, l='MpServer', x=-226.66, y=69.00, z=120.34], EntityRabbit['Rabbit'/111, l='MpServer', x=-229.78, y=64.00, z=140.63], EntityRabbit['Rabbit'/112, l='MpServer', x=-239.09, y=63.00, z=144.88], EntityRabbit['Rabbit'/113, l='MpServer', x=-231.72, y=63.00, z=153.88], EntityRabbit['Rabbit'/120, l='MpServer', x=-211.72, y=59.00, z=104.59], EntityRabbit['Rabbit'/121, l='MpServer', x=-220.44, y=63.00, z=113.66], EntityCow['Cow'/122, l='MpServer', x=-220.03, y=63.00, z=117.13], EntityRabbit['Rabbit'/123, l='MpServer', x=-208.19, y=61.28, z=139.69], EntityCreeper['Creeper'/125, l='MpServer', x=-208.44, y=41.00, z=156.00], EntityRabbit['Rabbit'/126, l='MpServer', x=-209.09, y=64.00, z=174.91]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:383)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2645)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:409)
+	at net.minecraft.client.main.Main.main(Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_31, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 768060472 bytes (732 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.19 Powered by Forge 11.15.1.1764 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8.9-11.15.1.1764.jar) 
+	UCHIJAAAA	Forge{11.15.1.1764} [Minecraft Forge] (forgeSrc-1.8.9-11.15.1.1764.jar) 
+	UCHIJAAAA	guielevator{1.7} [Elrol's GUI Elevator] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.14008 Compatibility Profile Context 21.19.137.1' Renderer: 'AMD Radeon(TM) R5 Graphics'
+	Launched Version: 1.8.9
+	LWJGL: 2.9.4
+	OpenGL: AMD Radeon(TM) R5 Graphics GL version 4.5.14008 Compatibility Profile Context 21.19.137.1, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x AMD A8-6410 APU with AMD Radeon R5 Graphics 
